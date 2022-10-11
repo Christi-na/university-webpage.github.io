@@ -47,6 +47,11 @@
 .blog__city-text{
     margin: auto 0;
 }
+.blog__city-pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .blog__pic-even{
     order: -1;
 }
@@ -88,4 +93,13 @@
 }
 .blog__grid:last-child{
     margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .blog__grid{
+        grid-template-columns: 1fr;
+    }
+    .blog__pic-even{
+        order: initial;
+    }
 }
